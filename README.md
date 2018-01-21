@@ -1,11 +1,11 @@
-# debounce-redis [![NPM version](https://badge.fury.io/js/debounce-redis.svg)](https://npmjs.org/package/debounce-redis) [![Build Status](https://travis-ci.org/sabakugaara/debounce-redis.svg?branch=master)](https://travis-ci.org/sabakugaara/debounce-redis)
+# debounce-events [![NPM version](https://badge.fury.io/js/debounce-events.svg)](https://npmjs.org/package/debounce-events) [![Build Status](https://travis-ci.org/sabakugaara/debounce-events.svg?branch=master)](https://travis-ci.org/sabakugaara/debounce-events)
 
 > Global events debounce using redis
 
 ## Installation
 
 ```sh
-$ npm install --save debounce-redis
+$ npm install --save debounce-events
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ $ npm install --save debounce-redis
 #### Example 1:
 
 ```js
-var Channel = require('debounce-redis');
+var Channel = require('debounce-events');
 var ch = new Channel(function update() {
   // do something...
 });
@@ -27,7 +27,7 @@ ch.emit('update'); // only update once
 
 ```js
 var Redis = require('ioredis');
-var Channel = require('debounce-redis');
+var Channel = require('debounce-events');
 var ch = new Channel(function update() {
   // do something
 }, {

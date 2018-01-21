@@ -1,12 +1,12 @@
 {
-  "name": "debounce-redis",
+  "name": "debounce-events",
   "description": "Global events debounce using redis",
   "version": "0.0.2",
-  "homepage": "https://github.com/sabakugaara/debounce-redis",
+  "homepage": "https://github.com/sabakugaara/debounce-events",
   "author": "Gaara ()",
-  "repository": "sabakugaara/debounce-redis",
+  "repository": "sabakugaara/debounce-events",
   "bugs": {
-    "url": "https://github.com/sabakugaara/debounce-redis/issues"
+    "url": "https://github.com/sabakugaara/debounce-events/issues"
   },
   "license": "MIT",
   "files": [
