@@ -1,5 +1,6 @@
 const {expect} = require('chai');
 const Channel = require('../../lib/channel');
+const Redis = require('ioredis');
 
 describe('#Channel', function () {
   it('should use default memory queue success', function(done) {
@@ -27,7 +28,7 @@ describe('#Channel', function () {
     }, 2);
   });
 
-  it('should use redis memory queue success', function(done) {
+  it('should use redis queue success', function(done) {
     let a = 0;
     function update() {
       ++a;
@@ -36,6 +37,7 @@ describe('#Channel', function () {
     const ch = new Channel(update, {
       wait: 50,
       adapter: Channel.ADAPTER_REDIS,
+      redisClient: new Redis()
     });
     ch.emit('update1');
     ch.emit('update1');
