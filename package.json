@@ -1,7 +1,7 @@
 {
   "name": "debounce-redis",
   "description": "Global events debounce using redis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/sabakugaara/debounce-redis",
   "author": "Gaara ()",
   "repository": "sabakugaara/debounce-redis",
