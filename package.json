@@ -12,11 +12,12 @@
   "files": [
     "LICENSE"
   ],
+  "main": "lib/channel.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "keywords": [
     "debounce",
