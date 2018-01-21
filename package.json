@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "LICENSE"
+    "lib/*"
   ],
   "main": "lib/channel.js",
   "engines": {
