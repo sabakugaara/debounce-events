@@ -25,6 +25,8 @@ ch.emit('update'); // only update once
 
 #### Example 2:
 
+**Notice: ** need redis key space notification enable `Ex` option
+
 ```js
 var Redis = require('ioredis');
 var Channel = require('debounce-events');

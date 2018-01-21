@@ -1,4 +1,6 @@
-const {expect} = require('chai');
+'use strict';
+
+const expect = require('chai').expect;
 const Channel = require('../../lib/channel');
 const Redis = require('ioredis');
 
